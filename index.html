@@ -1,121 +1,202 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Soy un joven de 22 años de edad apasionado por el desarrollo de páginas web tanto Frontend como Backend. Me gusta mucho desarrollar sistemas, páginas web y estoy cada dia en constante aprendizaje para encontrar nuevas formas de mejorar la experiencia del usuario.">
+    <meta name="description" content="Soy Esteban Alayon y este es mi portafolio web">
     <meta name="author" content="Esteban Alayón">
 
     <link rel="icon" type="image/png" sizes="32x32" href="">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/light.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/structure.css">
     <link rel="stylesheet" href="icon/all.min.css">
+
     <title>Portafolio | Esteban Alayón</title>
 </head>
+
 <body>
 
-    <div class="header-base">
-        <header class="header-general">
-            <div class="author">
-                <div>
-                    <picture>
-                        <img src="assets/img/author.jpg" alt="">
-                    </picture>
-                </div>
-                <div>
-                    <span>
-                        Esteban Alayón
-                    </span>
-                </div>
-            </div>
-            <nav class="nav">
-                <ul>
-                    <li><a class="menu-active" href="#inicio">Inicio</a></li>
-                    <li><a href="#sobremi">Sobre mí</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-
-    <div class="header-margin"></div>
-
-    <main class="main-body">
-        <article class="article">
-            <section class="section-inicio">
-                <img class="img-esteban" src="assets/img/esteban.png" alt="img-esteban">
-                <div class="capa-inicio">
-                    <div class="capa">
-                        <div class="item-1"></div>
-                        <div class="item-2"><h1>Esteban Alayón</h1></div>
-                        <div class="item-3"><h3>Desarrollador Web <span>Fullstack</span></h3></div>
-                        <div class="item-4"><p>Soy un joven de 23 años de edad apasionado por el desarrollo de páginas web tanto Frontend como Backend. Me gusta mucho resolver problemas y estoy cada dia en constante aprendizaje para encontrar nuevas formas de mejorar la experiencia del usuario.</p></div>
+    <div class="body-base">
+        <header class="header">
+            <div class="header-base">
+                <div class="author">
+                    <div class="img">
+                        <picture>
+                            <i class="fa-solid fa-camera"></i>
+                        </picture>
                     </div>
-                    <div class="capa">
-                        <div class="capa-base">
-                            <div class="title">
-                                <h4>Servicios</h4>
-                                <div>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
+                    <div class="text">
+                        <span>
+                            Full Name
+                        </span>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <button type="button">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul id="nav">
+                        <li><a href="#inicio" class="inicio">Inicio</a></li>
+                        <li><a href="#sobremi" class="sobremi">Sobre mí</a></li>
+                        <li><a href="#habilidades" class="habilidades">Habilidades</a></li>
+                        <li><a href="#proyectos" class="proyectos">Proyectos</a></li>
+                        <li><a href="#contacto" class="contacto">Contacto</a></li>
+                        <li class="switch">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main" id="main">
+            <article class="article" id="article">
+                <section class="section-inicio" id="inicio">
+                    <div class="section-base">
+                        <!--SESION INICIO-->
+                        <div class="capa-primary">
+                            <img class="img-inicio" src="./assets/img/esteban.png" alt="">
                             <div class="content">
-                                <div>
-                                    <h4>Diseños web personalizados</h4>
-                                    <p>El desarrollo de páginas web personalizadas de alta calidad es uno de los principales servicios que ofrezco de gran escala.</p>
+                                <div class="content-header">
+                                    <div class="content-title">
+                                        <div class="content-linea"></div>
+                                        <h1>Esteban Alayón</h1>
+                                    </div>
+                                    <div class="content-subtitle">
+                                        <h2><strong>FULLSTACK</strong><i class="fa-solid fa-check"></i></h2>
+                                    </div>
+                                    <div class="content-description">
+                                        <p>Desarrollador web especializado en crear <b>APIs personalizadas</b> y
+                                            <b>modernas interfaces de usuario.</b>
+                                        </p>
+                                    </div>
+                                    <div class="content-social">
+                                        <span>Redes sociales:</span>
+                                        <div>
+                                            <a href="#" class="fa-brands fa-facebook-f"></a>
+                                            <a href="#" class="fa-brands fa-instagram"></a>
+                                            <a href="https://www.tiktok.com/@estebanalayon7" target="_blank"
+                                                class="fa-brands fa-tiktok"></a>
+                                            <a href="https://www.linkedin.com/in/esteban-alayon-318a1424a/"
+                                                target="_blank" class="fa-brands fa-linkedin-in"></a>
+                                            <a href="https://github.com/gitestebanalayon" target="_blank"
+                                                class="fa-brands fa-github"></a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4>Diseños Web responsivos</h4>
-                                    <p>Ofrezco diseños que se adapten automáticamente al tamaño de pantalla de cualquier dispositivo, garantizando que el sitio web sea fácil de navegar y de usar en cualquier dispositivo.</p>
+                                <div class="content-footer">
+                                    <div class="pagina">
+                                        <span>Mi marca personal:</span>
+                                        <a href="#">
+                                            <img class="img-light" src="./assets/img/netzgo-light.png"
+                                                alt="logo de mi página netzgo">
+                                            <img class="img-dark" src="./assets/img/netzgo-dark.png"
+                                                alt="logo de mi página netzgo">
+                                        </a>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4>Servicios de mantenimiento</h4>
-                                    <p>Realizo depuraciones de códigos, constantemente estoy añadiendo funciones mejoradas y proporciono asistencia y actualizaciones continuas para garantizar estabilidad.</p>
-                                </div>
-                            </div>
-                            <div class="redes-sociales">
-                                <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
-                                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-github"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </article>
-    </main>
+                </section>
+                <section class="section-sobremi" id="sobremi">
+                    <div class="section-base">
+                        <!--SESION SOBRE MI-->
+                        <div class="capa-primary">
+                            <div class="content">
+                                <div class="content-header">
+                                    <div class="content-title">
+                                        <p>Sobre mí</p>
+                                    </div>
+                                    <div class="content-section">
+                                        <!-- Formación -->
+                                        <div class="section">
+                                            <h3>Formación:</h3>
+                                            <p>Graduado en <b>Licenciatura en Informática</b>, con especialización en
+                                                <b>Django</b>, <b>Nest.js</b> y <b>Vue.js</b>. Mi formación combina
+                                                fundamentos
+                                                sólidos con un enfoque práctico en <b>desarrollo web</b>.
+                                            </p>
+                                        </div>
 
-    <article class="article-body">
-        <section class="section-caja1">
-            <div class="base-body">
-                
-            </div>
-        </section>
-        <section class="section-caja2">
-            <div class="base-body">
-                
-            </div>
-        </section>
-        <section class="section-caja1">
-            <div class="base-body">
-                
-            </div>
-        </section>
-    </article>
+                                        <!-- Experiencia -->
+                                        <div class="section">
+                                            <h3>Experiencia:</h3>
+                                            <p>Más de <b>3 años</b> en proyectos de <b>backend y frontend</b> para sectores como
+                                                <b>educación</b> y <b>aplicaciones interactivas</b>. Destaco en la
+                                                creación de
+                                                <b>APIs robustas</b> y soluciones escalables.
+                                            </p>
+                                        </div>
 
-    <footer>
-                
-    </footer>
+                                        <!-- Habilidades Técnicas -->
+                                        <div class="section">
+                                            <h3>Habilidades Técnicas:</h3>
+                                            <p>Competencias en <b>Django</b>, <b>Nest.js</b>, <b>Vue.js</b> y
+                                                <b>Postgres</b>.
+                                                Experiencia en <b>autenticación</b>, <b>servicios RESTful</b> y manejo
+                                                de
+                                                <b>Git</b> para control de versiones.
+                                            </p>
+                                        </div>
 
+                                        <!-- Filosofía Profesional -->
+                                        <div class="section">
+                                            <h3>Filosofía Profesional:</h3>
+                                            <p>Comprometido con la <b>mejora continua</b>, la <b>eficiencia</b> y la
+                                                <b>innovación</b>. Apunto a soluciones que aporten <b>valor real</b> a
+                                                los
+                                                usuarios y colaboro para lograr un <b>código limpio y escalable</b>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-footer">
+                                    <a href="#">Curriculum Vitae</a href="#">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-habilidades" id="habilidades">
+                    <div class="section-base">
+                        <!--SESION HABILIDADES-->
+                        <div class="capa-primary">
+                            Habilidades
+                        </div>
+                    </div>
+                </section>
+                <section class="section-proyectos" id="proyectos">
+                    <div class="section-base">
+                        <!--SESION PROYECTOS-->
+                        <div class="capa-primary">
+                            Proyectos
+                        </div>
+                    </div>
+                </section>
+                <section class="section-contacto" id="contacto">
+                    <footer class="section-base">
+                        <!--SESION CONTACTO-->
+                        <div class="capa-primary">
+                            Contacto
+                        </div>
+                    </footer>
+                </section>
+            </article>
+        </main>
+
+
+
+    </div>
+
+
+
+    <!--<script src="assets/js/script.js"></script>-->
     <script src="assets/js/script.js"></script>
-</body>  
+</body>
+
 </html>

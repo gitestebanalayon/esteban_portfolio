@@ -1,0 +1,26 @@
+:root{
+    /*---LIGHT MODE---*/
+    --light-background-primary: #ffffff;
+    --light-background-secondary: #f3f3f3;
+    --light-background-blue: #57abff;
+    --light-background-green: #00a700;
+    --light-text-primary: #171d2a;
+    --light-text-secondary: #57abff;
+    --light-text-tertiary: #306cef;
+    --light-icon-primary: #e0e0e0;
+    --light-text-grey: #959595;
+    --light-text-grey-a: #525252;
+    --light-border-secondary: #f3f3f3;
+    --light-shadow-primary: #e2e2e2;
+    
+
+    /*---DARK MODE---*/
+    --dark-background-primary: #171d2a; 
+    --dark-background-secondary: #1c2231;
+    --dark-background-blue: #57abff;
+    --dark-text-primary: #e0e0e0;
+    --dark-text-secondary: #57abff;
+    --dark-icon-primary: #4e4b4b;
+    --dark-border-secondary: #1c2231;
+    --dark-shadow-primary: #151515;
+}

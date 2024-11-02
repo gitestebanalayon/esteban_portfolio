@@ -1,0 +1,129 @@
+@import url(vars.css);
+
+/*---------HEADER---------*/
+body{
+    background: var(--light-background-primary);
+}
+
+body .header{
+    background: var(--light-background-primary);
+}
+
+body .header .header-base{
+    background: var(--light-background-primary);
+    color: var(--light-text-primary);
+}
+
+body .header .author .img{
+    background-color: var(--light-background-secondary);
+    color: var(--light-text-primary);
+}
+
+body .header .author .text{
+    color: var(--light-text-primary);
+}
+
+body .header .nav ul li a{
+    color: var(--light-text-primary);
+}
+
+body .header .nav ul li a:hover,
+body .header .nav ul li a.active{
+    color: var(--light-text-secondary);
+}
+
+body .switch{
+    background-color: var(--dark-background-primary);
+}
+
+body .switch i:last-child{
+    color: var(--light-text-secondary);
+ 
+}
+
+body .header .nav ul li:last-child::before{
+    background-color: var(--light-background-primary);
+    border: 0.25em solid var(--light-background-primary);
+}
+
+body .header .nav ul li:last-child.active::before{
+    background: var(--dark-background-primary);
+    border: 0.25em solid var(--dark-background-primary);
+}
+
+/*----------MAIN----------*/
+
+body .main .article section{
+    background: var(--light-background-secondary);
+    color: var(--light-text-primary);
+}
+
+body .main .article section:nth-child(odd){
+    background: var(--light-background-primary);
+}
+
+/*--SECTION INICIO--*/
+
+body .section-inicio .content-social div a{
+    color: var(--light-text-primary);
+    box-shadow: 1px 1px 3px var(--light-shadow-primary);
+    background: var(--light-background-primary);
+}
+
+body .section-inicio .content-social div a:hover{
+    transform: rotate(-5deg);
+    box-shadow: 0px 0px 0px #fff;
+    color: var(--light-background-blue);
+}
+
+body .section-inicio .content-title .content-linea{
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,125,255,1) 13%, rgba(131,192,255,1) 28%, rgba(0,99,255,1) 50%, rgba(131,192,255,1) 70%, rgba(0,125,255,1) 83%, rgba(9,9,121,1) 100%); 
+}
+
+body .section-inicio .content-footer .pagina span{
+    color: var(--light-text-primary);
+}
+    
+body .section-inicio .content-footer .pagina a .img-dark{
+    display: none;
+}
+
+body .section-inicio .content-footer .pagina a .img-light{
+    display: block;
+}
+
+/*--SECTION SOBRE MI--*/
+body .section-sobremi .section-base .capa-primary .content .content-footer a{
+    color: var(--light-background-primary);
+    background: var(--light-background-green);
+}
+
+body .section-sobremi .section-base .capa-primary .content .content-header .content-section .section p{
+    color: var(--light-text-primary);
+}
+
+@media screen and (max-width: 848px){
+    .header .nav ul{
+        background: var(--light-background-primary);
+    }
+
+    .header .nav ul li a{
+        background: var(--light-background-secondary);
+    }
+
+    .header .nav button{
+        background: #ffffff00;
+        border: 1px solid var(--light-border-secondary);
+    }
+
+    .header .nav button{
+        color: var(--light-text-primary);
+    }
+
+    .header .nav ul li a.active{
+        background: var(--light-background-blue);
+        color: #fff !important;
+    }
+    
+}
